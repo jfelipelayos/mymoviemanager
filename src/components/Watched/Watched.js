@@ -6,7 +6,7 @@ import '../Main/Main.css'
 function Watched() {
     return (
         <div className="main-container">
-            Watched
+            <h2>Peliculas vistas</h2>
         </div>
     )
 }

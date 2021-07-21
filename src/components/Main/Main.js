@@ -15,7 +15,7 @@ function Main({ view, changeView, setSession }) {
                     <Route exact path="/">
                         <Navigation view={view} changeView={changeView} />
                         {
-                            view === 'home'
+                            view === 'watchlist'
                                 ? <Watchlist />
                                 : <Watched />
                         }

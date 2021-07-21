@@ -8,12 +8,12 @@ function Navigation({ view, changeView }) {
             <ul className="nav-list">
                 <li
                     className={`nav-list-item ${view === 'rankings' ? 'active-view' : ''}`}
-                    onClick={() => changeView('rankings')}>
+                    onClick={() => changeView('watchlist')}>
                     <i className="fas fa-eye"></i>
                 </li>
                 <li
                     className={`nav-list-item ${view === 'home' ? 'active-view' : ''}`}
-                    onClick={() => changeView('home')}>
+                    onClick={() => changeView('watched')}>
                     <i className="fas fa-ticket-alt"></i>
                 </li>
             </ul>

@@ -1,6 +1,5 @@
 .main-container {
-  border: 1px solid red;
-  padding: 50px;
-  width: 90%;
-  float: right;
+  padding: 50px 130px;
+  width: 100;
+  min-height: 90vh;
 }

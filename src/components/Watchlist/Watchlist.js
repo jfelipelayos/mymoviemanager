@@ -6,7 +6,7 @@ import '../Main/Main.css'
 function Watchlist() {
     return (
         <div className='main-container'>
-            Watchlist
+            <h2>Peliculas por ver</h2>
         </div>
     )
 }

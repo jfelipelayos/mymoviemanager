@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border: 1px solid red;
 }
 
 .movie-result-card-img {
@@ -12,8 +11,20 @@
 }
 
 .movie-result-card-info {
-  border: 1px solid red;
   text-align: start;
   width: 100%;
   padding: 10px 0px 10px 10px;
+}
+
+.movie-result-card-info-controls > button {
+  background: rgb(225, 98, 89);
+  color: white;
+  font-size: 1rem;
+  width: 160px;
+  height: 35px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 10px 10px 0px 0px;
 }
