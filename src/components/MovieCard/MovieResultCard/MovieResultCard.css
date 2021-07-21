@@ -1,0 +1,19 @@
+.movie-result-card {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid red;
+}
+
+.movie-result-card-img {
+  width: 100px;
+  border-radius: 10px;
+}
+
+.movie-result-card-info {
+  border: 1px solid red;
+  text-align: start;
+  width: 100%;
+  padding: 10px 0px 10px 10px;
+}
