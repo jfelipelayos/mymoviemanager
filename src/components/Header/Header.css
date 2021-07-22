@@ -58,3 +58,45 @@
   cursor: pointer;
   border-radius: 10px;
 }
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 425px) {
+  .header {
+    flex-wrap: wrap;
+  }
+}
+/* iPads (portrait) ----------- */
+@media only screen and (max-width: 768px) {
+  .header {
+    padding: 0;
+    height: 100%;
+    padding: 10px;
+  }
+  .header-left {
+    width: 100%;
+  }
+  .header-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .header-user-info {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  .header-add-button,
+  .header-logout-btn {
+    width: 120px;
+    font-size: 0.9rem;
+  }
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* Styles */
+}
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
+}

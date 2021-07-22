@@ -13,12 +13,14 @@ function Main({ view, changeView, setSession }) {
                 <Header setSession={setSession} />
                 <Switch>
                     <Route exact path="/">
-                        <Navigation view={view} changeView={changeView} />
-                        {
-                            view === 'watchlist'
-                                ? <Watchlist />
-                                : <Watched />
-                        }
+                        <div className="main-view">
+                            <Navigation view={view} changeView={changeView} />
+                            {
+                                view === 'watchlist'
+                                    ? <Watchlist />
+                                    : <Watched />
+                            }
+                        </div>
                     </Route>
                     <Route exact path="/add">
                         <Add />

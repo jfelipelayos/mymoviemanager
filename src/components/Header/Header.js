@@ -29,10 +29,12 @@ function Header({ setSession }) {
                 </div>
             </div>
             <div className="header-right">
-                <button className="header-add-button">
-                    <i className="fas fa-plus"></i>
-                    <Link to="/add">Añadir</Link>
-                </button>
+                <Link to="/add">
+                    <button className="header-add-button">
+                        <i className="fas fa-plus"></i>
+                        Añadir
+                    </button>
+                </Link>
                 <button
                     className="header-logout-btn"
                     onClick={handleLogout}

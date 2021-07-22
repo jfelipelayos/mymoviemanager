@@ -20,7 +20,7 @@ function Auth({ setSession }) {
                     setSession(true)
                 }
             } catch (error) {
-                console.log('FALLEEEEE', error)
+                console.log('FALLEEEEE', error) //TODO: Handle this error
             }
         } else if (authMode === 'register') {
             try {
@@ -28,7 +28,7 @@ function Auth({ setSession }) {
                 changeAuthMode('login')
 
             } catch (error) {
-                console.log('FALLEEEEE', error)
+                console.log('FALLEEEEE', error) //TODO: Handle this error
             }
         }
     }

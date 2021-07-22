@@ -1,5 +1,32 @@
 .main-container {
-  padding: 50px 130px;
-  width: 100;
+  width: 100%;
+  float: right;
   min-height: 90vh;
+  padding: 20px;
+}
+
+.main-view {
+  display: flex;
+}
+
+.main-container-title {
+  margin-bottom: 30px;
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 425px) {
+}
+/* iPads (portrait) ----------- */
+@media only screen and (max-width: 768px) {
+  .main-view {
+    flex-direction: column;
+  }
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* Styles */
+}
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
 }

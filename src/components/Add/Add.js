@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Add.css'
-import MovieResultCard from '../MovieCard/MovieResultCard/MovieResultCard'
+import MovieResultCard from '../Cards/MovieResultCard/MovieResultCard'
 
 function Add() {
     const [movieName, setMovieName] = useState('');

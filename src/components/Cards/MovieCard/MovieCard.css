@@ -1,0 +1,33 @@
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
+}
+
+.movie-card:hover {
+  transform: scale(1.1);
+}
+
+.movie-card:hover .movie-card-title {
+  opacity: 0;
+}
+
+.movie-card:hover .movie-control-btn {
+  border: 1px solid white;
+}
+
+.movie-card-controls {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.movie-card-img {
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.movie-card-title {
+  text-align: center;
+  font-weight: 600;
+  transition: 0.5s;
+}
