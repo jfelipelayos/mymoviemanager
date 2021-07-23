@@ -1,17 +1,13 @@
 import React, { useState } from 'react'
-import Main from './components/Main/Main'
-import Auth from './components/Auth/Auth'
+import MainView from './components/MainView/MainView'
 import './App.css';
 import { GlobalProvider } from './context/GlobalState'
-// import { useFirebaseApp, useUser } from 'reactfire'
 
 
 function App() {
 
   const [view, setView] = useState('watchlist')
-  const [session, setSession] = useState(false)
 
-  // const { data: user } = useUser();
 
   const changeView = (newView) => {
     setView(newView);
@@ -19,18 +15,7 @@ function App() {
 
   return (
     <GlobalProvider>
-      <div>
-        {
-          session && (
-            <Main setSession={setSession} view={view} changeView={changeView} />
-          )
-        }
-        {
-          !session && (
-            < Auth setSession={setSession} />
-          )
-        }
-      </div>
+      <MainView view={view} changeView={changeView} />
     </GlobalProvider>
   );
 }

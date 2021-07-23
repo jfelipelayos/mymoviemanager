@@ -13,21 +13,21 @@ function MovieControls({ movie, type }) {
         <div>
             {type === 'watchlist' && (
                 <div className="movie-controls">
-                    <button className="movie-control-btn" onClick={() => addMovieToWatched(movie)} >
-                        <i className="fas fa-ticket-alt"></i>
+                    <button className="movie-control-btn" aria-label="Marcar Pelicula como vista" onClick={() => addMovieToWatched(movie)} >
+                        <i className="fas fa-ticket-alt" aria-hidden="true"></i>
                     </button>
-                    <button className="movie-control-btn" onClick={() => removeMovieFromWatchlist(movie)}>
-                        <i className="fas fa-trash"></i>
+                    <button className="movie-control-btn" aria-label="Eliminar Pelicula de la lista" onClick={() => removeMovieFromWatchlist(movie)}>
+                        <i className="fas fa-trash" aria-hidden="true"></i>
                     </button>
                 </div>
             )}
             {type === 'watched' && (
                 <div className="movie-controls">
-                    <button className="movie-control-btn" onClick={() => moveMovieToWatched(movie)} >
-                        <i className="fas fa-eye-slash"></i>
+                    <button className="movie-control-btn" aria-label="Marcar Pelicula como no vista" onClick={() => moveMovieToWatched(movie)} >
+                        <i className="fas fa-eye-slash" aria-hidden="true"></i>
                     </button>
-                    <button className="movie-control-btn" onClick={() => removeMovieFromWatched(movie)}>
-                        <i className="fas fa-trash"></i>
+                    <button className="movie-control-btn" aria-label="Eliminar Pelicula de la lista" onClick={() => removeMovieFromWatched(movie)}>
+                        <i className="fas fa-trash" aria-hidden="true"></i>
                     </button>
                 </div>
             )}

@@ -7,9 +7,9 @@ function MovieCard({ movie, type }) {
         <div className="movie-card">
             <div className="movie-card-controls">
                 {movie.poster_path ? (
-                    <img className="movie-card-img" src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`} alt={`${movie.title} Poster`} />
+                    <img width="100%" className="movie-card-img" src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`} alt={`${movie.title} Poster`} />
                 ) : (
-                    <img className="movie-card-img" src={`https://www.uneplay.com/images/carousel/noimage_poster.png?_v=0.2.2`} alt='No hay poster' />
+                    <img width="100%" className="movie-card-img" src={`https://www.uneplay.com/images/carousel/noimage_poster.png?_v=0.2.2`} alt='No hay poster' />
                 )}
                 {
                     <MovieControls movie={movie} type={type} />

@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { GlobalContext } from '../../context/GlobalState'
 import MovieCard from '../Cards/MovieCard/MovieCard'
 import './Watchlist.css'
-import '../Main/Main.css'
+import '../MainView/MainView.css'
 
 
 function Watchlist() {

@@ -15,9 +15,9 @@ function MovieResultCard({ movie }) {
     return (
         <div key={movie.id} className="movie-result-card">
             {movie.poster_path ? (
-                <img className="movie-result-card-img" src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`} alt={`${movie.title} Poster`} />
+                <img width="150px" className="movie-result-card-img" src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`} alt={`${movie.title} Poster`} />
             ) : (
-                <img className="movie-result-card-img" src={`https://www.uneplay.com/images/carousel/noimage_poster.png?_v=0.2.2`} alt='No hay poster' />
+                <img width="100%" className="movie-result-card-img" src={`https://www.uneplay.com/images/carousel/noimage_poster.png?_v=0.2.2`} alt='No hay poster' />
             )}
 
             <div className="movie-result-card-info">
