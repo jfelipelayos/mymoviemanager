@@ -1,11 +1,10 @@
-
 const firebaseConfig = {
-    apiKey: "AIzaSyDBgH-rDxdNlIK32VjZ6WB6Pg00FwCjpJU",
-    authDomain: "globant-bootcamp-project.firebaseapp.com",
-    projectId: "globant-bootcamp-project",
-    storageBucket: "globant-bootcamp-project.appspot.com",
-    messagingSenderId: "204851691571",
-    appId: "1:204851691571:web:e91a6826f60ac6cc60e346"
+    apiKey: "AIzaSyDXvE07P728yvRo3zYQ4zrI2qTYKfN8kvU",
+    authDomain: "mymoviemanager-jfelipelayos.firebaseapp.com",
+    projectId: "mymoviemanager-jfelipelayos",
+    storageBucket: "mymoviemanager-jfelipelayos.appspot.com",
+    messagingSenderId: "151346163458",
+    appId: "1:151346163458:web:277c7aaa41e01ceebf9c1b"
 };
 
 export default firebaseConfig
