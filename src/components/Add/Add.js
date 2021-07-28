@@ -6,6 +6,7 @@ function Add() {
     const [movieName, setMovieName] = useState('');
     const [searchResult, setSearchResult] = useState([])
 
+
     const handleInputChange = (event) => {
         event.preventDefault();
         setMovieName(event.target.value);
@@ -30,6 +31,7 @@ function Add() {
                 placeholder="Busca una pelicula"
                 value={movieName}
                 onChange={handleInputChange}
+                data-testid="add-input"
             />
             {
                 searchResult.length > 0 && (

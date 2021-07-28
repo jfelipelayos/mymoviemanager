@@ -8,13 +8,13 @@ import 'firebase/app'
 import { FirebaseAppProvider } from 'reactfire';
 
 ReactDOM.render(
-  <FirebaseAppProvider firebaseConfig={firebaseConfig}>
-    <Suspense fallback={'Cargando la app . . .'}>
+  <Suspense fallback={'Cargando la app . . .'}>
+    <FirebaseAppProvider firebaseConfig={firebaseConfig}>
       <React.StrictMode>
         <App />
       </React.StrictMode>
-    </Suspense>
-  </FirebaseAppProvider>,
+    </FirebaseAppProvider>
+  </Suspense>,
   document.getElementById('root')
 );
 

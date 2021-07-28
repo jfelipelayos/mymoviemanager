@@ -10,7 +10,12 @@ function Watched() {
 
     return (
         <div className='main-container'>
-            <h2 className='main-container-title'>Peliculas vistas</h2>
+            <div className="main-container-info">
+                <h2 className='main-container-title' data-testid="mainview-watched-title">Peliculas vistas
+
+                </h2>
+                <h3>{watched.length}</h3>
+            </div>
             {
                 watched.length > 0 ? (
                     <div className="main-container-movies">

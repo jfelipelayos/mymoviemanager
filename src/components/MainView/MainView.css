@@ -2,11 +2,23 @@
   width: 100%;
   float: right;
   min-height: 90vh;
-  padding: 20px 50px;
+  padding: 30px 100px;
 }
 
 .main-view {
   display: flex;
+}
+
+.main-container-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-container-info > h3 {
+  padding: 10px;
+  border-radius: 50px;
+  background: rgb(225, 98, 89);
 }
 
 .main-container-title {

@@ -10,7 +10,10 @@ function Watchlist() {
 
     return (
         <div className='main-container'>
-            <h2 className='main-container-title'>Peliculas por ver</h2>
+            <div className="main-container-info">
+                <h2 className='main-container-title' data-testid="mainview-watch-title">Peliculas por ver</h2>
+                <h3>{watchlist.length}</h3>
+            </div>
             {
                 watchlist.length > 0 ? (
                     <div className="main-container-movies">

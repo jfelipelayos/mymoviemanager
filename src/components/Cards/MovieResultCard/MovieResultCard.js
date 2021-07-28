@@ -17,7 +17,7 @@ function MovieResultCard({ movie }) {
             {movie.poster_path ? (
                 <img width="150px" className="movie-result-card-img" src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`} alt={`${movie.title} Poster`} />
             ) : (
-                <img width="100%" className="movie-result-card-img" src={`https://www.uneplay.com/images/carousel/noimage_poster.png?_v=0.2.2`} alt='No hay poster' />
+                <img width="150px" className="movie-result-card-img" src={`https://www.uneplay.com/images/carousel/noimage_poster.png?_v=0.2.2`} alt='No hay poster' />
             )}
 
             <div className="movie-result-card-info">
@@ -29,9 +29,13 @@ function MovieResultCard({ movie }) {
                         disabled={currentStoredMovieDisabled ? true : false}
                         style={currentStoredMovieDisabled ? { opacity: '0.3', cursor: 'initial' } : { opacity: '1' }}
                         onClick={() => addMovieToWatchlist(movie)}
+                        data-testid='add-movie-to-watch'
                     >Añadir a pendientes</button>
                     <button disabled={currentStoredMovieDisabled ? true : false}
-                        style={currentStoredMovieDisabled ? { opacity: '0.3', cursor: 'initial' } : { opacity: '1' }} onClick={() => addMovieToWatched(movie)}>Añadir a vistas</button>
+                        style={currentStoredMovieDisabled ? { opacity: '0.3', cursor: 'initial' } : { opacity: '1' }}
+                        onClick={() => addMovieToWatched(movie)}
+                        data-testid='add-movie-to-watched'
+                    >Añadir a vistas</button>
                 </div>
             </div>
         </div>
