@@ -24,7 +24,7 @@ function Watchlist() {
                         }
                     </div>
                 ) : (
-                    <h3>Lista vacia</h3>
+                    <h3>Lista vacia...</h3>
                 )
             }
 
