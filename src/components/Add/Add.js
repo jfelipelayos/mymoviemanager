@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './Add.css'
 import MovieResultCard from '../Cards/MovieResultCard/MovieResultCard'
 
+
 function Add() {
     const [movieName, setMovieName] = useState('');
     const [searchResult, setSearchResult] = useState([])
@@ -12,7 +13,7 @@ function Add() {
         setMovieName(event.target.value);
 
         if (event.target.value !== '') {
-            fetch(`https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_API_KEY}&language=en-MX&page=1&include_adult=false&query=${event.target.value}`).then(res => res.json()).then(data => {
+            fetch(`https://api.themoviedb.org/3/search/movie?api_key=782b46af1610e427a7b9a1b5203d8228&language=en-MX&page=1&include_adult=false&query=${event.target.value}`).then(res => res.json()).then(data => {
                 if (!data.errors) {
                     setSearchResult(data.results);
                 } else {

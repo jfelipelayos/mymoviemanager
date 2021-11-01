@@ -1,5 +1,10 @@
 # Demo
+
 [live demo](https://mymoviemanager-jfelipelayos.web.app/)
+
+## Page preview
+
+![](preview.png)
 
 # Getting Started with Create React App
 

@@ -1,10 +1,10 @@
 const firebaseConfig = {
-    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-    projectId: process.env.REACT_APP_PROJECT_ID,
-    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
-    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
-    appId: process.env.REACT_APP_APPID
+    apiKey: "AIzaSyDXvE07P728yvRo3zYQ4zrI2qTYKfN8kvU",
+    authDomain: "mymoviemanager-jfelipelayos.firebaseapp.com",
+    projectId: "mymoviemanager-jfelipelayos",
+    storageBucket: "mymoviemanager-jfelipelayos.appspot.com",
+    messagingSenderId: "151346163458",
+    appId: "1:151346163458:web:277c7aaa41e01ceebf9c1b"
 };
 
 export default firebaseConfig
